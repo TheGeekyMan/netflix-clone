@@ -1,0 +1,161 @@
+.container {
+    background-image: url('../../assets/login_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    // background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+
+    .title {
+        font-size: 3rem;
+        color: white;
+        text-align: center;
+        font-weight: 900;
+    }
+
+    .subTitle {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: white;
+        text-align: center;
+    }
+
+    .subTitle1 {
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: white;
+        text-align: center;
+    }
+
+}
+
+.sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: black;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
+
+    .sectionTitle {
+        font-size: 2rem;
+        font-weight: 700;
+        color: white;
+        text-align: center;
+        line-height: normal;
+
+        @media screen and (min-width: 960px) {
+            font-size: 3rem;
+            font-weight: 900;
+            text-align: left;
+        }
+    }
+
+    .sectionSubTitle {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: white;
+        text-align: center;
+        line-height: normal;
+
+        @media screen and (min-width: 960px) {
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-align: left;
+        }
+    }
+
+    .sectionLogo {
+        width: 500px;
+
+        @media (max-width: 800px) {
+            width: 330px;
+            display: flex;
+            margin: auto;
+        }
+    }
+}
+
+.landingPageNavBarContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+    .lang {
+        background-color: black;
+        color: white;
+        font-weight: 500;
+        height: 1.8rem;
+        width: 6.3rem;
+        border: none;
+        border-radius: 4px;
+        margin-right: 16px;
+    }
+
+    .signInBtn {
+        background-color: red;
+        color: white;
+        border-radius: 4px;
+        height: 1.8rem;
+        width: 4.3rem;
+        border: none;
+        font-weight: 500;
+    }
+}
+
+//faq component
+.faqContainer {
+    background-color: black;
+    padding-bottom: 40px;
+
+    .faqTitle {
+        font-size: 3rem;
+        font-weight: 900;
+        color: white;
+        text-align: center;
+        padding-top: 35px;
+    }
+
+    .customAccordion{
+        width: 90%;
+        margin: auto;
+    }
+
+    .customAccordionItem {
+        border: none !important;
+        overflow: hidden;
+        // border-radius: 16px !important;
+        margin: 10px 0 !important;
+        @media screen and (max-width: 1280px) {
+            margin: 10px 0 !important;
+        }
+    }
+    
+    .customAccordionHeader {
+        button{
+            // display: flex !important;
+            // align-items: flex-start !important;
+            background-color: dimgray !important;
+        }
+    
+        :not(.collapsed), :active {
+            box-shadow: none !important;
+            background-color: dimgray !important;
+            color: white !important;
+        }
+    }
+
+    .subTitle {
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: white;
+        text-align: center;
+        padding-top: 40px;
+    }
+}
+

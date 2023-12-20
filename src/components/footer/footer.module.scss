@@ -1,0 +1,15 @@
+.footerContainer{
+    background-color: black;
+    color: #b3b3b3;
+}
+
+.footerCols{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+li{
+    list-style: none;
+}
